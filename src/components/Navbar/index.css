@@ -1,0 +1,8 @@
+.bg-container {
+  background-color: yellow !important;
+  font-weight: bold !important;
+}
+.header-logo {
+  width: 120px;
+  height: 100px;
+}

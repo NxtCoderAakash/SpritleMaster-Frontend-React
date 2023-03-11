@@ -1,0 +1,30 @@
+.bg-container-card {
+  height: 100% !important;
+  background-color: bisque;
+  flex-grow: 1;
+}
+.form-container {
+  border: none;
+
+  padding: 50px;
+}
+.body-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.click-button {
+  margin-left: 10px;
+  cursor: pointer;
+}
+.err-message-red {
+  font-weight: bold;
+  color: red;
+}
+.form-group {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-start;
+}

@@ -1,0 +1,49 @@
+.calculation-form-container {
+  width: 100%;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 10px;
+}
+.bg-home-container {
+  display: flex;
+}
+.home-card {
+  background-color: transparent !important;
+}
+.operation-list {
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  list-style: none;
+  width: 100%;
+  border: 2px solid green;
+  padding: 10px;
+}
+button {
+  cursor: pointer;
+}
+.bg-container-card {
+  min-width: 500px;
+  min-height: 800px;
+  display: flex;
+  justify-content: space-between;
+  border: none;
+  border-radius: 20px;
+}
+.body-right-container {
+  background-color: #ffccf2;
+}
+.body-left-container {
+  background-color: #e0ccff;
+}
+.bg-student-container-card {
+  border-radius: 20px;
+  margin-right: 30px;
+}
+.bg-master-container-card {
+  border-radius: 20px;
+}

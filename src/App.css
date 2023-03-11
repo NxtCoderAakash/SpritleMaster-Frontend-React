@@ -36,3 +36,17 @@
     transform: rotate(360deg);
   }
 }
+
+.bg-container-app {
+  min-height: 100vh !important;
+  background-color: bisque !important;
+  display: flex;
+  flex-direction: column;
+}
+.spritle-logo {
+  height: 60px;
+  width: 120px;
+}
+.body-container {
+  background-image: linear-gradient(to right, #00ffff, #66ff33, #00ffff);
+}

@@ -1,0 +1,14 @@
+.form-container-registration {
+  padding: 30px;
+  border: 3px solid violet;
+  background-color: antiquewhite;
+  border-radius: 20px;
+  padding: 30px;
+  width: 450px;
+  color: grey;
+}
+.form-group {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-start;
+}
