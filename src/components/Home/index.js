@@ -240,7 +240,7 @@ class Home extends Component {
               <div className="bg-container-card home-card">
                 <Card className="bg-student-container-card">
                   <Card.Header>
-                    <Header user={studentName} />
+                    <Header user={studentName} type="student" />
                   </Card.Header>
                   <Card.Body className="body-left-container">
                     <h1>Hey Student !!</h1>
@@ -268,7 +268,7 @@ class Home extends Component {
 
                 <Card className="bg-master-container-card">
                   <Card.Header>
-                    <Header user={master} />
+                    <Header user={master} type="master" />
                   </Card.Header>
                   <Card.Body className="body-right-container">
                     <h1>Hi Master!!!</h1>

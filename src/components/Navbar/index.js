@@ -11,7 +11,7 @@ const Header = (props) => (
       let { username, isLoggedIn, removeNameParent } = value;
       console.log(username, "head");
       console.log(isLoggedIn, "head");
-      let { user } = props;
+      let { user, type } = props;
       username = user;
       console.log(username);
       if (user === undefined) {
@@ -37,13 +37,13 @@ const Header = (props) => (
         <Navbar>
           <Container>
             <Navbar.Brand href="#home">
-              {user.split(" ")[0] === "Student" && (
+              {(user.split(" ")[0] === "Student" || type === "student") && (
                 <img
                   className="header-logo"
                   src="https://res.cloudinary.com/dfqs9as0v/image/upload/v1678549469/Spritle/student-logo-vector_mb8ify.jpg"
                 />
               )}
-              {user.split(" ")[0] === "Master" && (
+              {(user.split(" ")[0] === "Master" || type === "master") && (
                 <img
                   className="header-logo"
                   src="https://res.cloudinary.com/dfqs9as0v/image/upload/v1678549467/Spritle/master-logo_hlw5xi.jpg"
