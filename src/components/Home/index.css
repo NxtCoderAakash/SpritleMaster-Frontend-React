@@ -43,7 +43,9 @@ button {
 .bg-student-container-card {
   border-radius: 20px;
   margin-right: 30px;
+  min-width: 500px;
 }
 .bg-master-container-card {
   border-radius: 20px;
+  min-width: 500px;
 }

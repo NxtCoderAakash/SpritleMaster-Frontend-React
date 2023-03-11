@@ -42,6 +42,8 @@
   background-color: bisque !important;
   display: flex;
   flex-direction: column;
+  overflow: auto;
+  flex-wrap: wrap;
 }
 .spritle-logo {
   height: 60px;
@@ -49,4 +51,11 @@
 }
 .body-container {
   background-image: linear-gradient(to right, #00ffff, #66ff33, #00ffff);
+}
+html {
+  zoom: 75%;
+}
+.bg-container-card {
+  min-width: 100vh;
+  flex-grow: 1;
 }
