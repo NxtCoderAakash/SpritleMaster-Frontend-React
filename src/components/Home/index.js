@@ -205,6 +205,11 @@ class Home extends Component {
     }
   };
 
+  onClickStudentLogin = () => {
+    const { history } = this.props;
+    history.push("/login");
+  };
+
   render() {
     const { output, fetchedList, studentOperationList } = this.state;
     console.log(fetchedList, studentOperationList);
@@ -240,11 +245,23 @@ class Home extends Component {
                   <Card.Body className="body-left-container">
                     <h1>Hey Student !!</h1>
                     <p> Get your calculations done here!!</p>
-                    <Calculator
-                      onRefreshResult={this.onRefreshResult}
-                      studentName={studentName}
-                      getResult={this.getResult}
-                    />
+                    {!studentName && (
+                      <Button
+                        onClick={this.onClickStudentLogin}
+                        type="button"
+                        variant="primary"
+                        type="button"
+                      >
+                        Login to Use Calculator
+                      </Button>
+                    )}
+                    {studentName && (
+                      <Calculator
+                        onRefreshResult={this.onRefreshResult}
+                        studentName={studentName}
+                        getResult={this.getResult}
+                      />
+                    )}
                   </Card.Body>
                   <Card.Footer>For Students</Card.Footer>
                 </Card>
