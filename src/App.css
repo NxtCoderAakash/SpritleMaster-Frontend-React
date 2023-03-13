@@ -38,7 +38,7 @@
 }
 
 .bg-container-app {
-  min-height: 100vh !important;
+  height: 100vh !important;
   background-color: bisque !important;
   display: flex;
   flex-direction: column;
@@ -53,7 +53,7 @@
   background-image: linear-gradient(to right, #00ffff, #66ff33, #00ffff);
 }
 html {
-  zoom: 75%;
+  zoom: 100%;
 }
 .bg-container-card {
   min-width: 100vh;
